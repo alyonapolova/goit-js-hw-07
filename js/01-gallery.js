@@ -55,4 +55,5 @@ function closeOriginalImg(event) {
   if (event.code === "Escape") {
     instance.close();
   }
+  window.removeEventListener("keydown", openOriginalImg);
 }
