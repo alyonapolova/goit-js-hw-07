@@ -36,6 +36,10 @@ function openOriginalImg(event) {
     return;
   }
 
+  createLightbox();
+}
+
+function createLightbox() {
   const lightbox = new SimpleLightbox(".gallery a", {
     captionType: "attr",
     captionsData: "alt",
