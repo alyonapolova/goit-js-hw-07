@@ -35,9 +35,8 @@ function openOriginalImg(event) {
   if (event.target.tagName !== "IMG") {
     return;
   }
-
-  createLightbox();
 }
+createLightbox();
 
 function createLightbox() {
   const lightbox = new SimpleLightbox(".gallery a", {
